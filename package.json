@@ -1,6 +1,6 @@
 {
   "name": "json-parser-stream",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "JSON.parse transform stream",
   "main": "index.js",
   "directories": {
