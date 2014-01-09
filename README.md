@@ -20,7 +20,10 @@ Create an instance of linestream and pipe a readable stream into that instance
 ```javascript
 var JSONParserStream = require('json-parser-stream')
 // parser is an instance of require('stream').Transform
-var parser = new JSONParserStream()
+var opts = {
+  highWaterMark: 2
+}
+var parser = new JSONParserStream(opts) // opts is optional
 
 var readStream = {} // a stream of single json strings per data event
 var parser = readStream.pipe(splitter)
